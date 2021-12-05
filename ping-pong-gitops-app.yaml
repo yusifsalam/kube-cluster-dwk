@@ -11,3 +11,7 @@ spec:
   path: ./ping-pong/manifests
   prune: true
   validation: client
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-age
